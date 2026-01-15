@@ -38,7 +38,7 @@ def main():
     #print(reservation)
 
     # Try these
-    print(reservation.split('|'))
+    # print(reservation.split('|'))
     reservationId = int(reservation.split('|')[0])
     print(f"Reservation number: {reservationId}")
     booker = reservation.split('|')[1]
