@@ -6,7 +6,7 @@
 #
 # See LICENSE file in the project root for full license information.
 
-# Modified by nnn according to given task
+# Modified by Gökhan Arifoglu according to given task
 
 """
 A program that prints reservation information according to task requirements
