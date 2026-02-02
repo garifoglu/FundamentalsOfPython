@@ -37,42 +37,42 @@ def print_booker(reservation: list) -> None:
 
 
 def print_date(reservation: list) -> None: 
-      day = datetime.strptime(reservation[2],  "%Y-%m-%d").date() 
-      finnish_day = day.strftime("%d.%m.%Y")
-      print(f"Date: {finnish_day}")
+    day = datetime.strptime(reservation[2],  "%Y-%m-%d").date() 
+    finnish_day = day.strftime("%d.%m.%Y")
+    print(f"Date: {finnish_day}")
 
-def  print_start_time(reservation: list) -> None: 
-         time = datetime.strptime(reservation[3], "%H:%M").time()
-         finnish_time = time.strftime("%H.%M")
-         print(f"Start time: {finnish_time}")
+def print_start_time(reservation: list) -> None: 
+    time = datetime.strptime(reservation[3], "%H:%M").time()
+    finnish_time = time.strftime("%H.%M")
+    print(f"Start time: {finnish_time}")
 
-def   print_hours(reservation: list) -> None: 
-         number_of_hours = int(reservation[4])
-         print(f"Number of hours: {number_of_hours}")
+def print_hours(reservation: list) -> None: 
+    number_of_hours = int(reservation[4])
+    print(f"Number of hours: {number_of_hours}")
 
 def print_hourly_rate(reservation: list) -> None: 
-         hourly_rate = float(reservation[5])
-         print(f"Hourly rate: {hourly_rate: .2f}" .replace('.',',') + " €")
+    hourly_rate = float(reservation[5])
+    print(f"Hourly rate: {hourly_rate: .2f}" .replace('.',',') + " €")
 
-def   print_total_price(reservation: list) -> None:  
-         total_price = int(reservation[4])*float(reservation[5])
-         print(f"Total price: {total_price: .2f}" .replace('.',',') + " €")
+def print_total_price(reservation: list) -> None:  
+    total_price = int(reservation[4])*float(reservation[5])
+    print(f"Total price: {total_price: .2f}" .replace('.',',') + " €")
 
-def   print_paid(reservation: list) -> None: 
-          paid = bool(reservation[6])
-          print(f"Paid: {'Yes' if paid else 'No'}")
+def print_paid(reservation: list) -> None: 
+    paid = bool(reservation[6])
+    print(f"Paid: {'Yes' if paid else 'No'}")
 
-def   print_venue(reservation: list) -> None:
-          resource = reservation[7]
-          print(f"Venue: {resource}")
+def print_venue(reservation: list) -> None:
+    resource = reservation[7]
+    print(f"Venue: {resource}")
 
-def   print_phone(reservation: list) -> None: 
-         phone = reservation[8]
-         print(f"Phone: {phone}")
+def print_phone(reservation: list) -> None: 
+    phone = reservation[8]
+    print(f"Phone: {phone}")
 
-def  print_email(reservation: list) -> None: 
-         email = reservation[9]
-         print(f"Email: {email}")
+def print_email(reservation: list) -> None: 
+    email = reservation[9]
+    print(f"Email: {email}")
     
 
 def main():
