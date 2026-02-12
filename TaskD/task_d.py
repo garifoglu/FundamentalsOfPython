@@ -1,3 +1,7 @@
+# Copyright (c) 2026 Gökhan Arifoglu
+# License: MIT
+
+
 from datetime import datetime, date
 
 def read_data(filename: str) -> list:
@@ -31,12 +35,16 @@ def main() -> None:
         date(2025, 10, 18),  # Saturday
         date(2025, 10, 19),  # Sunday
     ]
+
+    weekdays_fi = ["Maanantai", "Tiistai", "Keskiviikko", "Torstai", "Perjantai", "Lauantai", "Sunnuntai"]
+
     
-    for day in days:
+    for i in range(len(days)):
+        current_day = days[i]
         c1 = c2 = c3 = p1 = p2 = p3 = 0.0
         
         for row in data:
-            if row[0].date() == day:
+            if row[0].date() == current_day:
                 c1 += row[1] / 1000  
                 c2 += row[2] / 1000  
                 c3 += row[3] / 1000  
@@ -51,8 +59,8 @@ def main() -> None:
         p2_str = f"{p2:.2f}".replace(".", ",")
         p3_str = f"{p3:.2f}".replace(".", ",")
         
-        print(f"{day.strftime('%A'):<11} {day.strftime('%d.%m.%Y'):<12} "
-              f"{c1_str:>5}  {c2_str:>5}  {c3_str:>7}     "
+        print(f"{weekdays_fi[i]:<11} {current_day.strftime('%d.%m.%Y')} "
+              f"{c1_str:>6}  {c2_str:>5}  {c3_str:>7}     "
               f"{p1_str:>10}  {p2_str:>5}  {p3_str:>5}")
 
 if __name__ == "__main__":
