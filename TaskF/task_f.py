@@ -111,7 +111,7 @@ def create_daily_report(daily: dict) -> list[str]:
 
     lines = []
 
-    lines.append("-" * 50)
+    """lines.append("-" * 50)"""
     lines.append(f"Report for the period {start_s}–{end_s}")
     lines.append(f"- Total consumption: {format_number(total_c)} kWh")
     lines.append(f"- Total production: {format_number(total_p)} kWh")
@@ -152,7 +152,7 @@ def create_monthly_report(daily: dict) -> list[str]:
 
     lines = []
 
-    lines.append("-" * 50)
+    """lines.append("-" * 50)"""
     lines.append(f"Report for the month: {months[month - 1]}")
     lines.append(f"- Total consumption: {format_number(total_c)} kWh")
     lines.append(f"- Total production: {format_number(total_p)} kWh")
@@ -182,7 +182,7 @@ def create_yearly_report(daily: dict) -> list[str]:
 
     lines = []
 
-    lines.append("-" * 50)
+    """lines.append("-" * 50)"""
     lines.append("Report for the year 2025")
     lines.append(f"- Total consumption: {format_number(total_c)} kWh")
     lines.append(f"- Total production: {format_number(total_p)} kWh")
