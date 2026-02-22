@@ -1,4 +1,4 @@
-# Copyright (c) 2026 Your Name
+# Copyright (c) 2026 Gökhan Arifoglu
 # License: MIT
 
 from datetime import datetime, date

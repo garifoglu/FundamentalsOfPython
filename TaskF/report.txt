@@ -1,0 +1,5 @@
+--------------------------------------------------
+Report for the month: May
+- Total consumption: 306,64 kWh
+- Total production: 451,98 kWh
+- Average temperature: 9,62 °C
